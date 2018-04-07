@@ -56,8 +56,8 @@ function initializeMapTV{$tv->id}() {
                              tv{$tv->id}params.zoom
                              );
     {literal}
-     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+     L.tileLayer('//{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="//osm.org/copyright">OpenStreetMap</a> contributors'
     })
     {/literal}
     .addTo(tv{$tv->id}Map);
